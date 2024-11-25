@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 50%;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+form input,
+form button {
+    display: block;
+    width: 320px;
+    margin: 8px auto;
+    padding: 8px;
+    font-size: 16px;
+    color: #1f1c1c;
+}
+
+form button {
+    background-color: gray;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+p.sucesso{
+    background-color: lightgreen;
+    color: black;
+    padding: 16px;
+}
+
+p.fracasso{
+    background-color: lightcoral;
+    color: black;
+    padding: 16px;
+}

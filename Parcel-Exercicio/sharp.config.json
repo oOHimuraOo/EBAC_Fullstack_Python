@@ -1,0 +1,20 @@
+{
+    "png":{
+        "quality": 75
+    },
+    "jpeg":{
+        "quality": 75
+    },
+    "gif":{
+        "quality": 75
+    },
+    "tiff":{
+        "quality": 75
+    },
+    "avif":{
+        "quality": 75
+    },
+    "heif":{
+        "quality": 75
+    }
+}

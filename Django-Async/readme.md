@@ -1,0 +1,1 @@
+Projeto voltado a testar as chamadas asincronas do django.

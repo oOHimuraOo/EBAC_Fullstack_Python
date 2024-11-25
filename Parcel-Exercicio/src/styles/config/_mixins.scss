@@ -1,0 +1,7 @@
+@use 'variaveis';
+
+@mixin AjusteDeTexto($tamanho: 16px) {
+    font-size: $tamanho;
+    line-height: $tamanho + 1px;
+}
+

@@ -1,0 +1,11 @@
+.footer{
+    padding: 10px;
+    display: block;
+    background-color: black;
+    
+    &__container {
+        &__text {
+            text-align: center;
+        }
+    }
+}

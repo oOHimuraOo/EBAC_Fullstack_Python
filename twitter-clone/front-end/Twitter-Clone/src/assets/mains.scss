@@ -1,0 +1,21 @@
+@use '@/assets/Variaveis.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Variaveis.$fontPadrao;
+  color: Variaveis.$corPrimaria;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: Variaveis.$corDeFundoPrimaria;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #000;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 32px auto 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0 50% 32px auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin: 0 auto 8px auto;
+    padding: 8px;
+    font-size: 16px;
+    color: #1f1c1c;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form button {
+    background-color: rgb(107, 107, 107);
+    color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: lightgray;
+    color: #1f1c1c;
+}
+
+input:focus,
+textarea:focus {
+    outline: rgba(75, 0, 0, 255);
+}
+
+.container p {
+    margin: 32px auto 0 auto;
+}
+
+input.errorName {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
+
+p.errorNameP {
+    color: #fff;
+    background-color: red;
+    outline: red;
+    display: block;
+    justify-content: center;
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 41.6%;
+    margin-right: 41.6%;
+}
+
+p.errorGeneral {
+    color: #fff;
+    background-color: red;
+    padding: 16px;
+}
+
+p.successGeneral {
+    color: white;
+    background-color: green;
+    padding: 16px;
+}
+

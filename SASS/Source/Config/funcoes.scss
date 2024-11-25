@@ -1,0 +1,5 @@
+@use 'sass:math';
+
+@function pixelParaEm($medidaAlvoPX, $medidaPadraoPX: 16px) {
+    @return math.div($medidaAlvoPX, $medidaPadraoPX)+em;
+}

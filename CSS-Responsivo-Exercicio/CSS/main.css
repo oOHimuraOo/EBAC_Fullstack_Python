@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.html {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2f7fe0;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+main {
+    position: relative;
+    top: 140px;
+    background-color: #f7f3f8;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+footer {
+    position: relative;
+    background-color: #2f7fe0;
+    top: 100px;
+}
+
+header > .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-superior {
+    display: flex;
+    justify-content: space-between;
+    max-height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    text-align: center;
+    min-width: 230px;
+    max-width: 230px;
+}
+
+.cabecalho-superior ul {
+    display: flex;
+}
+
+.cabecalho-superior li {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin-right: 8px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.bordaAtiva {
+    background-color: #00caf8;
+}
+
+.cabecalho-superior li:hover {
+    border-top: 2px solid #00caf8;
+}
+
+.cabecalho-superior .excecao:hover {
+    border-top: none;
+}
+
+.cabecalho-superior a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 200px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.cabecalho-superior img {
+    width: 20%;
+}
+
+.cabecalho-superior h2 {
+    width: 80%;
+    font-size: 16px;
+    text-wrap: wrap;
+    margin-left: 8px;
+    color: #d9ffff;
+}
+
+.cabecalho-superior .excecao, .menhuHamburguer .excecao {
+    margin: 0;
+}
+
+.botao-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.botao-carrinho > button {
+    background-color: #0c2061;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #d9ffff;
+    cursor: pointer;
+}
+
+.cabecalho-inferior {
+    display: flex;
+    width: 100%;
+    max-height: 50px;
+    height: 50px;
+}
+
+.botao-menu {
+    height: 100%;
+    min-width: 230px;
+    width: 230px;
+    max-width: 230px
+}
+
+.botao-menu button {
+    background-color: #0c2061;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #d9ffff;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menhuHamburguer {
+    max-width: 30px;
+    min-width: 30px;
+    width: 30px;
+    height: 32px;
+    align-content: center;
+}
+
+.botao-menu button span {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.menuTexto {
+    min-width: 166px;
+    max-width: 166px;
+    min-height: 32px;
+    max-height: 32px;
+    align-content: center;
+}
+
+.botao-menu button p {
+    text-align: center;
+    width: 160px;
+}
+
+.menuSecundario {
+    display: flex;
+    width: 100%;
+    z-index: 100000;
+}
+
+.menuSecundario nav{
+    display: none;
+    width: 100%;
+    background-color: #4878af;
+}
+
+.menuSecundario li {
+    list-style-type: none;
+    align-content: center;
+}
+
+.menuSecundario a {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.menuSecundario a img {
+    height: 100%;
+    margin-right: 4px;
+    max-width: 10px;
+}
+
+.menuSecundario a h3 {
+    color: #000037;
+    font-weight: bold;
+}
+
+.menuSecundario li ul {
+    display: block;
+}
+
+.menuSecundario li ul li {
+    padding-left: 32px;
+}
+
+.menuSecundario li ul li a {
+    color: #00caf8;
+}
+
+.cabecalho-inferior form {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.cabecalho-inferior form input {
+    padding: 8px;
+    height: 100%;
+    width: 88%;
+    font-size: 20px;
+}
+
+.cabecalho-inferior form button {
+    background-color: #0c2061;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #d9ffff;
+    width: 12%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menuPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+}
+
+.menuPrincipal nav {
+    display: none;
+}
+
+.menuPrincipal nav ul li{
+    display: inline;
+    margin-right: 16px;
+    padding: 8px;
+}
+
+.menuPrincipal nav ul li:hover {
+    background-color: #00caf8;
+    border-radius: 3px;
+}
+
+.menuPrincipal nav ul li a {
+    text-decoration: none;
+    color: #d9ffff;
+}
+
+button:hover, .cabecalho-inferior form button:hover {
+    background-color: #173f8b;;
+}
+
+.carrossel img{
+    overflow: hidden;
+    max-width: 1440px;
+    max-height: 420px;
+    width: 100%;
+    height: 100%;
+}
+
+.produtosLista {
+    display: grid;
+    grid-template-columns: repeat(4,24.25%);
+    column-gap: 1%;
+    row-gap: 1%;
+}
+
+.produtosLista article {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtosLista h3 {
+    font-weight: bolder;
+    margin-bottom: 8px;
+    color: #000037;
+}
+
+.produtosLista img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.produtosLista p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: 3s;
+}
+
+.ativar-hover-produtos-lista:hover, .ativar-hover-section-p:hover {
+    transform: scale(2);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 100;
+    background-color: #fff;
+}
+
+
+.produtosLista h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00caf8;;
+    transition: 1s;
+    margin-bottom: 16px;
+}
+
+.preco {
+    font-weight: bolder;
+    display: inline-block;
+    color: #00caf8;;
+    transition: 3s;
+}
+
+.ativar-hover-preco:hover {
+    color: #027fe9;
+    background-color: #fff;
+    transform: scale(2);
+}
+
+.produtosLista button {
+    display: block;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #027fe9;
+    cursor: pointer;
+}
+
+.produtosLista button:hover {
+    transform: scale(1.03);
+    background-color: #00caf8;;
+}
+
+.botaoFlutuante {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    z-index: 10102837;
+}
+.escondedorDeBotaoFlutuante{
+    display: none;
+}
+
+.reveladorDeBotaoFlutuante {
+    display: block;
+}
+
+.botaoFlutuante > button {
+    padding: 16px;
+    background-color: #0c2061;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+}
+
+.botaoFlutuante > button:hover {
+    background-color: #173f8b;
+}
+
+footer > .container {
+    display: block;
+}
+
+.rodape-superior {
+    padding-top: 32px;
+}
+
+.rodape-superior ul {
+    display: grid;
+    grid-template-columns: repeat(5,19.2%);
+    column-gap: 1%;
+    list-style-type: none;
+}
+
+.rodape-superior li ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#metodosPagamento {
+    display: grid;
+    grid-template-columns: repeat(2, 49.5%);
+    column-gap: 1%;
+}
+
+#metodosPagamento img {
+    max-height: 70px;
+    width: 100%;
+}
+
+#news img{
+    max-width: 40px;
+    width: 100%;
+}
+
+#apps img{
+    max-width: 50%;
+    width: 100%;
+}
+
+.rodape-superior a {
+    text-decoration: none;
+}
+
+.rodape-superior h4 {
+    margin-bottom: 16px;
+    color: #d3effa;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rodape-superior h5 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: black;
+}
+
+#emailLabel {
+    font-size: 14px;
+}
+
+.rodape-superior form {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.rodape-superior #email {
+    padding: 4px;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.rodape-superior form button {
+    padding: 4px;
+    width: 28%;
+    background-color: #0c2061;
+    border: none;
+    color: #fff;
+}
+
+.rodape-superior form button:hover {
+    background-color: #173f8b;
+}
+
+.rodape-superior h6 {
+    margin-bottom: 16px;
+    color: #d3effa;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#apps img {
+    width: 49%;
+    max-height: 50px;
+}
+
+.rodape-inferior {
+    margin-top: 32px;
+    background-color: #173f8b;
+}
+
+.rodape-inferior .container > ul{
+    display: grid;
+    grid-template-columns: repeat(3,32.6%);
+    column-gap: 1%;
+    max-height: 300px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rodape-inferior ul {
+    list-style-type: none;
+}
+
+.rodape-inferior h1 {
+    margin: auto;
+    height: 100%;
+    color: #000037;
+}
+
+.rodape-inferior h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d3effa;
+    margin-bottom: 16px;
+}
+
+.rodape-inferior p {
+    color: #84d1df;
+}
+
+.rodape-inferior img {
+    max-height: 150px;
+    width: 100%;
+}
+
+main > section > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+main > section {
+    padding: 24px 0;
+    color: #182c61;
+}
+
+main > section .container {
+    align-items: flex-start;
+}
+
+main > section h2 {
+    margin-bottom: 16px;
+}
+
+main > section p {
+    margin-bottom: 8px;
+    transition: 3s;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.sociais-links img {
+    height: 24px;
+}
+
+.sociais-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.sociais-links a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px){
+    .cabecalho-superior nav{
+        display: none;
+    }
+    
+    .cabecalho-superior {
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .botao-menu {
+        min-width: 62px;
+        width: 62px;
+    }
+
+    .botao-menu .menuTexto{
+        display: none;
+    }
+    
+    .cabecalho-inferior form input {
+        width: 77%;
+    }
+
+    .cabecalho-inferior form button{
+        width: 23%
+    }
+
+    .menuPrincipal nav {
+        display: block;
+    }
+
+    #empresas, #lojas, #pagamento, #apps {
+        display: none;
+    }
+
+    .produtosLista {
+        grid-template-columns: repeat(2, 49.5%);
+    }
+
+    .rodape-superior ul {
+        grid-template-columns: repeat(4, 24%);
+    }
+
+    .rodape-superior #email, .rodape-superior form button {
+        width: 100%;
+    }
+
+    .botaoFlutuante {
+        display: none;
+    }
+
+    .rodape-inferior .container > ul {
+        padding-bottom: 16px;
+    }
+
+    #tituloDireitos, #tituloCertificado {
+        font-size: 16px;
+    }
+    
+    #tituloCertificado {
+        text-align: center;
+    }
+
+    #direitos {
+        font-size: 14px;
+    }
+
+    main > section > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands-list li {
+        display: flex;
+        justify-content: center;
+    }
+
+    main > section h2 {
+        margin: 18px;
+        text-align: center;
+    }
+
+    main > section p {
+        margin: 18px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width:1023px) {
+    .excecao, #liModoLupa{
+        display: none;
+    }
+
+    .botao-menu {
+        min-width: 62px;
+        width: 62px;
+    }
+
+    .botao-menu .menuTexto{
+        display: none;
+    }
+    
+    .cabecalho-inferior form input {
+        width: 77%;
+    }
+
+    .cabecalho-inferior form button{
+        width: 23%
+    }
+
+    .menuPrincipal nav {
+        display: block;
+    }
+
+    #empresas, #lojas, #pagamento, #apps {
+        display: none;
+    }
+
+    .produtosLista {
+        grid-template-columns: repeat(3, 32.67%);
+    }
+
+    .rodape-superior ul {
+        grid-template-columns: repeat(4, 24%);
+    }
+
+    .rodape-superior #email, .rodape-superior form button {
+        width: 100%;
+    }
+
+    .botaoFlutuante {
+        display: none;
+    }
+
+    .rodape-inferior .container > ul {
+        padding-bottom: 16px;
+    }
+
+    #tituloDireitos, #tituloCertificado {
+        font-size: 16px;
+    }
+    
+    #tituloCertificado {
+        text-align: center;
+    }
+
+    #direitos {
+        font-size: 14px;
+    }
+
+    main > section > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands-list li {
+        display: flex;
+        justify-content: center;
+    }
+
+    main > section h2 {
+        margin: 18px;
+        text-align: center;
+    }
+
+    main > section p {
+        margin: 18px;
+    }
+}

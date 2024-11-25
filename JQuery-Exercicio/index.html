@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&family=Tauri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            Lista de tarefas
+        </h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" required placeholder="Nome da tarefa" id="nomeTarefa">
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Tarefa:
+                    </th>
+                    <th>
+                        Adicionado em:
+                    </th>
+                    <th>
+                        Concluido em:
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="coluna1">
+                    </td>
+                    <td id="coluna2">
+                    </td>
+                    <td id="coluna3">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="coluna1">
+                    </td>
+                    <td id="coluna2">
+                        Tarefas:
+                    </td>
+                    <td id="coluna3">
+                        0/0
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

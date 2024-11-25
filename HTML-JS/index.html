@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JavaScript</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>depósitos</h2>
+        <form id="form-deposit">
+            <input id="nome-beneficiario" type="text" required placeholder="Nome Completo do beneficiário">
+            <p id="nomeError"></p>
+            <input id="numero-conta" type="number" required placeholder="Numero da conta">
+            <input id="valor-deposito" type="number" required placeholder="Valor">
+            <textarea id="descricao" name="Descrição" placeholder="Descrição"></textarea>
+            <button id="btn-enviar" type="submit">Depositar</button>
+        </form>
+        <p id="generalMessage">
+            o montante de : <b>1000</b> foi enviado para o cliente: <b>Nome do cliente</b> - conta: <b>1</b>
+        </p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

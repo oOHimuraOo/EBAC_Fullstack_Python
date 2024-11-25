@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Tauri", sans-serif;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #1a2b2b;
+    border-bottom: 16px solid #332222;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #4d1a1a;
+    color: #fff;
+}
+
+main form input, main form button{
+    background-color: #800909;
+    color: #fff;
+    padding: 8px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 8px;
+}
+
+main form input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+main table {
+    margin: 16px auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+main table thead, main table tfoot {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+main table tfoot #coluna2{
+    text-align: right;
+}
+
+main table tfoot #coluna3{
+    text-align: left;
+    font-style: normal;
+    padding-left: 30px;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: 5px solid #661111;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+#coluna1 li {
+    list-style-type: disc;
+    text-align: left;
+}
+.encode-sans expanded-regular {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tauri-regular {
+    font-family: "Tauri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.tarefaConcluida {
+    text-decoration: line-through;
+    opacity: 0.5;
+}

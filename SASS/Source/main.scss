@@ -1,0 +1,77 @@
+@use 'config/reset.scss';
+@use 'config/fonts.scss';
+@use 'Config/variaveis.scss';
+@use 'config/mixins.scss';
+@use 'Config/funcoes.scss';
+
+body {
+    background-color: variaveis.$corDeFundo;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0;
+    background-color: variaveis.$corPrincipal;
+    color: #fff;
+    text-align: center;
+}
+
+
+.form-container {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+        font-size: funcoes.pixelParaEm(48px);
+        text-align: center;
+    }
+
+    form {
+        
+        width: 100%;
+        max-width: 480px;
+        margin-top: 40px;
+
+        input {
+            @include mixins.elementoForm();
+            background-color: transparent;
+            border: none;
+            border-bottom: 3px solid variaveis.$corPrincipal;
+            max-width: 760px;
+
+            label {
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            @include mixins.elementoForm();
+            background-color: variaveis.$corSecundaria;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            color: #fff;
+
+            &:hover {
+                background-color: darken(variaveis.$corSecundaria, 15%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .container {
+        max-width: 80%;
+
+    }
+}

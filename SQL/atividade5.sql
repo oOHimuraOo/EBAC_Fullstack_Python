@@ -1,0 +1,1 @@
+CREATE INDEX test_idx_ebac ON test_indexing(id);

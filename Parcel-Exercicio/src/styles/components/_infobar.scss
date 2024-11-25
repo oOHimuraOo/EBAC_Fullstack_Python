@@ -1,0 +1,44 @@
+@use '../config/variaveis';
+
+.hero__info-bar {
+    padding: 16px 24px;
+    background-color: variaveis.$corPrimaria;
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+
+    &__list{
+        display: flex;
+        gap: 80px;
+
+        &__item{
+            color: variaveis.$corDeTextoTerciaria;
+
+            b {
+                margin-bottom: 5px;
+                display: block;
+                color: variaveis.$corDeTextoSecundaria;
+            }
+        }
+    }
+
+    @media (max-width:640px) {
+        display: block;
+        width: 50vw;
+
+        &__list {
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        width: 65vw;
+        &__list {
+            gap: 16px;
+        }
+    }
+}

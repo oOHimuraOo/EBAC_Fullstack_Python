@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JavaScript - Exercicio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador de valores</h1>
+        <p>Digite abaixo dois valores, Iremos comparar os valores e validar se o valor iserido no "Campo B" for maior.</p>
+        <form id="form">
+            <input type="number" placeholder="Campo A: digite um valor." id="campoA" required>
+            <input type="number" placeholder="Campo B: digite um valor." id="campoB" required>
+            <button type="submit" id="btnEnviar">Enviar</button>
+        </form>
+        <div class="resultado">
+            <p id="resultadoTexto">
+                aqui vai aparecer o valor <strong>desejado</strong>
+            </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

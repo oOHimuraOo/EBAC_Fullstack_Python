@@ -1,0 +1,77 @@
+@use '../config/variaveis';
+
+.atividades {
+    padding: 80px 0;
+
+    &--modificador_bg1 {
+        background-image: linear-gradient(variaveis.$corPrimaria, variaveis.$corSecundaria);
+    }
+
+    &--modificador_bg2 {
+        background-image: linear-gradient(variaveis.$corSecundaria, variaveis.$corTerciaria);
+    }
+
+    &--modificador_bg3 {
+        background-image: linear-gradient(variaveis.$corTerciaria, variaveis.$corPrimaria);
+    }
+
+    &__container {
+        display: flex;
+
+        &__img {
+            margin-left: 10vw;
+            max-width: 15vw;
+            margin-right: 40px;
+            border-radius: 16px;
+            border: variaveis.$corPrimaria solid 2px
+        }
+
+        &__detalhes {
+            margin: auto 0;
+            margin-right: 10vw;
+            &__titulo {
+                color: variaveis.$corDeTextoEscura;
+                margin-bottom: 15px;
+            }
+            &__texto {
+                color: variaveis.$corDeTextoEscura;
+                line-height: 22px;
+            }
+        }
+    }
+
+    @media (max-width:640px) {
+        padding: 40px;
+        &__container {
+            display: block;
+
+            &__img {
+                display: block;
+                margin: 0 auto 15px;
+                max-width: 50vw;
+            }
+
+            &__detalhes {
+                text-align: center;
+                margin-right: 0;
+                &__titulo {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:1024px) {
+        &__container {
+            &__img {
+                max-width: 50vw;
+            }
+
+            &__detalhes {
+                &__titulo {
+                    margin-bottom: 13px;
+                } 
+            }
+        }
+    }
+}

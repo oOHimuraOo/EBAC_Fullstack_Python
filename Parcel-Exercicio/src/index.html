@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Aniversário!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Happy+Monkey&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__container">
+            <img src="img/birthday-boxes-gifts.svg" alt="" class="hero__logo">
+            <p id="contador" class="hero__text titulo--grande">
+                Quantos dias faltam para o Aniversário?
+            </p>
+            <div class="hero__info-bar">
+                <ul class="hero__info-bar__list">
+                    <li class="hero__info-bar__list__item texto--medio">
+                        <b class="texto--grande">onde?</b>
+                        <span class="texto--medio" >Algum lugar aí!</span>
+                    </li>
+                    <li class="hero__info-bar__list__item texto--medio">
+                        <b class="texto--grande">quando?</b>
+                        <span class="texto--medio"  id="data">09/10/2024</span>
+                    </li>
+                </ul>
+                <a data-verificador class="botao botao--primario texto--medio" href="#">Validar Convite</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="galeria">
+            <div class="galeria__carousel" id="imgs-carousel">
+                <img src="img/galeria1.jpg" alt="">
+                <img src="img/galeria2.jpg" alt="">
+                <img src="img/galeria3.jpg" alt="">
+            </div>
+        </section>
+        <section class="atividades atividades--modificador_bg1">
+            <div class="atividades__container" data-aos="fade-up-right">
+                <img class="atividades__container__img" src="img/atividade1.jpg" alt="" class="localizacao__img">
+                <div class="atividades__container__detalhes">
+                    <h2 class="atividades__container__detalhes__titulo titulo--pequeno">Atividade 1</h2>
+                    <p class="atividades__container__detalhes__texto texto--grande">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, repellat. Soluta eligendi quis reprehenderit modi eius illum. Numquam odio excepturi mollitia doloremque alias quibusdam molestias optio tempora, ipsam ratione praesentium.</p>
+                </div>
+            </div>
+        </section>
+        <section class="atividades atividades--modificador_bg2">
+            <div class="atividades__container" data-aos="fade-up-right">
+                <img class="atividades__container__img" src="img/atividade2.jpg" alt="" class="localizacao__img">
+                <div class="atividades__container__detalhes">
+                    <h2 class="atividades__container__detalhes__titulo titulo--pequeno">atividade 2</h2>
+                    <p class="atividades__container__detalhes__texto texto--grande">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, quod! Quo nemo dicta, aliquid illum sint fugiat aliquam magnam inventore impedit eos dignissimos, non, corporis expedita possimus. Veniam, provident autem.</p>
+                </div>
+            </div>
+        </section>
+        <section class="atividades atividades--modificador_bg3">
+            <div class="atividades__container" data-aos="fade-up-right">
+                <img class="atividades__container__img" src="img/atividade3.jpg" alt="" class="localizacao__img">
+                <div class="atividades__container__detalhes">
+                    <h2 class="atividades__container__detalhes__titulo titulo--pequeno">atividade 3</h2>
+                    <p class="atividades__container__detalhes__texto texto--grande">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis maiores doloremque vero ad inventore error libero impedit modi natus sit, non rerum molestias asperiores at eligendi, voluptatem, eius hic. Nam?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__container__text texto--pequeno">
+                *informações fictícias e apenas usadas para cumprir atividade solicitada pela EBAC! <br> *Para efeito de teste apenas digite numeros b 'PAR' para obter uma validação positiva.
+            </p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

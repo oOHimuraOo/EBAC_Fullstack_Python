@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Bodoni-72';
+    src: 
+        url('../Assets/MARCA TAVERNA BÚFALO DOURADO/tipografia/Bodoni 72 Smallcaps Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'first-order-condensed';
+    src: 
+        url('../Assets/MARCA TAVERNA BÚFALO DOURADO/tipografia/firstordercond.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'first-order-title';
+    src: 
+        url('../Assets/MARCA TAVERNA BÚFALO DOURADO/tipografia/firstordertitle.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}

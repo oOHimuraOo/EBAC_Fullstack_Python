@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./JavaScript/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./JavaScript/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./JavaScript/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="CSS/main.css" id="estilo-principal">
+    <link rel="stylesheet" href="./CSS/estilo_escuro.css" id="estilo-escuro">
+    <link rel="icon" href="./images/Mountain-logo-Design-Graphics-9785421-1-580x435.png" type="icon">
+    <link rel="stylesheet" href="./HTML/sobre.html">
+    <title>Loja Lorem</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="cabecalho-superior">
+                <h1>Lorem</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#conta">
+                                <img src="./images/Sprite-0002.png" alt="placeholder" id="contaIMG">
+                                <h2>Minha Conta</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#att-cliente">
+                                <img src="./images/Sprite-0004.png" alt="placeholder" id="cepIMG">
+                                <h2>Informe seu cep</h2>
+                            </a>
+                        </li>
+                        <li id="liModoEscuro">
+                            <a id="modoEscuro">
+                                <img src="./images/Sprite-0005.png" alt="placeholder" id="meIMG">
+                                <h2>Modo escuro</h2>
+                            </a>
+                        </li>
+                        <li id="liModoLupa">
+                            <a id="modoLupa">
+                                <img src="./images/zoom_in_icon-icons.com_66116.png" alt="placeholder" id="mlIMG">
+                                <h2>modo Lupa</h2>
+                            </a>
+                        </li>
+                        <li class="excecao">
+                            <div class="botao-carrinho">
+                                <button type="button"><strong>0</strong> Carrinho</button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cabecalho-inferior">
+                <div class="botao-menu">
+                    <button type="button">
+                        <div class="menhuHamburguer">
+                            <span></span>
+                            <span></span>
+                            <span class="excecao"></span>
+                        </div>
+                        <div class="menuTexto">
+                            <p>
+                                Escolha uma categoria
+                            </p>
+                        </div>
+                    </button>
+                    <div class="menuSecundario">
+                        <nav>
+                            <ul>
+                                <li class="menuTituloEsportes">
+                                    <a href="#esportes">
+                                        <img src="./images/409143-200.png" alt="placeholder">
+                                        <h3>
+                                            Esportes
+                                        </h3>
+                                    </a>
+                                    <ul class="EsporteSubcategoria">
+                                        <li>
+                                            <a href="#basquete">Basquete</a>
+                                        </li>
+                                        <li>
+                                            <a href="#futebol">futebol</a>
+                                        </li>
+                                        <li>
+                                            <a href="#volei">volei</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menuTitulo">
+                                    <a href="#informatica">
+                                        <img src="./images/409143-200.png" alt="placeholder">
+                                        <h3>
+                                            informatica
+                                        </h3>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#hardware">hardware</a>
+                                        </li>
+                                        <li>
+                                            <a href="#software">software</a>
+                                        </li>
+                                        <li>
+                                            <a href="#Perifericos">Perifericos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menuTitulo">
+                                    <a href="#entretenimento">
+                                        <img src="./images/409143-200.png" alt="placeholder">
+                                        <h3>
+                                            Entretenimento
+                                        </h3>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="#filmes">filmes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#musica">musica</a>
+                                        </li>
+                                        <li>
+                                            <a href="#miscelaneous">diversos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#limpeza">
+                                        <img src="./images/409143-200.png" alt="placeholder">
+                                        <h3>
+                                            limpeza
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <form>
+                    <input type="search" placeholder="Digite aqui o que deseja">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <div class="menuPrincipal">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#home" class="home">Inicio</a>
+                        </li>
+                        <li id="empresas">
+                            <a href="#empresas" >Para empresas</a>
+                        </li>
+                        <li>
+                            <a href="#sobre" class="sobre">Quem somos</a>
+                        </li>
+                        <li>
+                            <a href="#serviços">serviços</a>
+                        </li>
+                        <li id="lojas">
+                            <a href="#lojas" >nossas lojas</a>
+                        </li>
+                        <li>
+                            <a href="#dia">oferta do dia</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="owl-carousel carrossel">
+                <div>
+                    <img src="./images/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg" alt="placeholder">
+                </div>
+                <div>
+                    <img src="./images/360_F_573551225_h5mGL6pOLL5mDJi9pz7nYfG8uCppOfvW.jpg" alt="placeholder">
+                </div>
+                <div>
+                    <img src="./images/astronomia-do-ceu-noturno-galactico-e-ciencia-combinaram-ia-generativa_188544-9656.avif" alt="placeholder">
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="produtosLista">
+                <article>
+                    <img src="./images/download (1).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (2).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (3).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download.jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (1).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (2).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (3).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download.jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (1).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+                <article>
+                    <img src="./images/download (2).jpg" alt="placeholder">
+                    <h3>Nome do produto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, enim quaerat velit, libero adipisci minima deserunt beatae, quam quia molestias ex tempore cupiditate laboriosam ducimus nulla incidunt quasi quos consequuntur.</p>
+                    <h4>preço: <div class="preco">R$ 10.00</div></h4>
+                    <button type="button">Addicionar ao carrinho</button>
+                </article>
+            </section>
+        </div>
+        <section>
+            <div class="botaoFlutuante escondedorDeBotaoFlutuante">
+                <button type="button">/\</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="rodape-superior">
+                <nav>
+                    <ul>
+                        <li>
+                            <h4>institucional</h4>
+                            <ul>
+                                <li>
+                                    <a href="#sobre" class="sobre">
+                                        <h5>
+                                            quem somos
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Localização
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Nossas lojas
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Blog
+                                        </h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Duvidas</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Entrega
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Garantia
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Como comprar
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            formas de pagamento
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Sobre boletos
+                                        </h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Ajuda</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            SAC
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Fale Conosco
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Termos de aceite
+                                        </h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>
+                                            Politicas de privacidade
+                                        </h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li  id="pagamento">
+                            <h4>Pagamento</h4>
+                            <ul id="metodosPagamento">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/Old_Visa_Logo.svg.webp" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/png-transparent-logo-mastercard-graphics-font-visa-mastercard-text-label-logo.png" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/american.webp" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/boleto.webp" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/pix.webp" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/nubank.svg" alt="placeholder">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="news">
+                            <h4>NewsLetter</h4>
+                            <ul>
+                                <li>
+                                    <label for="email" id="emailLabel">Receba ofertas exclusivas via e-mail:</label>
+                                    <form>
+                                        <input type="email" placeholder="digite aqui seu email" id="email">
+                                        <button type="submit">Enviar</button>
+                                    </form>
+                                </li>
+                                <li id="redes">
+                                    <h6>Redes sociais</h6>
+                                    <a href="#">
+                                        <img src="./images/facebook.png" alt="placeholder">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/instagram.png" alt="placeholder">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/Sprite-0012.png" alt="placeholder">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/Sprite-0011.png" alt="placeholder">
+                                    </a>
+                                </li>
+                                <li id="apps">
+                                    <h6>Baixe os aplicativos</h6>
+                                    <a href="#">
+                                        <img src="./images/Sprite-0013.png" alt="placeholder">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/Sprite-0014.png" alt="placeholder">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+            <div class="rodape-inferior">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <h1>Lorem</h1>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <h2 id="tituloDireitos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                                </li>
+                                <li>
+                                    <p id="direitos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus laboriosam reprehenderit ex modi nemo vel consequatur ad deleniti incidunt, fuga nihil earum at reiciendis inventore placeat perspiciatis voluptatem iure mollitia!</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2 id="tituloCertificado">Certificado de segurança</h2>
+                            <img src="./images/logotipo-de-criptografia-ssl-segura-ilustracao-vetorial-de-icone-de-conexao-segura-icone-de-certificado-ssl_526569-865.avif" alt="placeholder">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./JavaScript/owl.carousel.min.js"></script>
+    <script src="./JavaScript/main.js"></script>
+</body>
+</html>

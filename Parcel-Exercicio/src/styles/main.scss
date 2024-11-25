@@ -1,0 +1,104 @@
+@use 'config/reset';
+@use 'config/fonts';
+@use 'config/variaveis';
+@use 'config/mixins.scss';
+@use 'components/infobar';
+@use 'components/buttons';
+@use 'sections/header';
+@use 'sections/galeria';
+@use 'sections/atividades';
+@use 'sections/footer';
+
+body {
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corDeTextoPrimaria;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.slick-prev, .slick-next, .slick-arrow, .slick-next::before, .slick-prev::before {
+    display: none;
+}
+
+.titulo {
+    &--grande {
+        @include mixins.AjusteDeTexto(40px);
+    }
+
+    &--medio {
+        @include mixins.AjusteDeTexto(36px);
+        font-family: variaveis.$fontSecundaria;
+    }
+
+    &--pequeno {
+        @include mixins.AjusteDeTexto(34px);
+        font-family: variaveis.$fontSecundaria;
+    }
+}
+
+.texto {
+    &--grande {
+        @include mixins.AjusteDeTexto(20px);
+        font-family: variaveis.$fontSecundaria;
+    }
+
+    &--medio {
+        @include mixins.AjusteDeTexto();
+        font-family: variaveis.$fontSecundaria;
+    }
+
+    &--pequeno{
+        @include mixins.AjusteDeTexto(12px);
+        font-family: variaveis.$fontTerciaria;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .titulo {
+        &--grande {
+            @include mixins.AjusteDeTexto(36px);
+        }
+    
+        &--medio {
+            @include mixins.AjusteDeTexto(34px);
+            font-family: variaveis.$fontSecundaria;
+        }
+    
+        &--pequeno {
+            @include mixins.AjusteDeTexto(32px);
+            font-family: variaveis.$fontSecundaria;
+        }
+    }
+    
+    .texto {
+        &--grande {
+            @include mixins.AjusteDeTexto(18px);
+            font-family: variaveis.$fontSecundaria;
+        }
+    
+        &--medio {
+            @include mixins.AjusteDeTexto(14px);
+            font-family: variaveis.$fontSecundaria;
+        }
+    
+        &--pequeno{
+            @include mixins.AjusteDeTexto(10px);
+            font-family: variaveis.$fontTerciaria;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        max-width: 100vw;
+        margin: 0;
+    }
+}

@@ -1,0 +1,152 @@
+* {
+    font-family: "bodoni-72";
+}
+
+body {
+    background-color: #2f2f2f;
+}
+
+.navbar {
+    background-color: black;
+    --bs-navbar-brand-color: rgb(255, 191, 63);
+    --bs-navbar-brand-hover-color:  rgb(255, 191, 63);
+    
+}
+
+.sub-cont {
+    display: flex;
+    align-items: center;
+}
+
+#tbd-logo {
+    padding-top: 0;
+    margin-top: 0;
+    width: 75px;
+}
+
+.Titulo {
+    font-family: 'first-order-condensed', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .nav-link:hover {
+    color: rgb(200, 130, 00);
+}
+
+.nav .nav-item .active, .nav-pills .nav-link.active {
+    background-color: rgb(255, 191, 63);
+    color: rgb(33, 35, 34);
+}
+
+.nav .nav-link {
+    color: rgb(255, 191, 63);
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 191, 63);
+}
+
+.carousel {
+    min-height: 520px;
+    max-height: 520px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 520px;
+}
+
+.section-title {
+    font-family: 'first-order-title', sans-serif;
+    font-weight: bold;
+    color: rgb(200, 130, 00);
+}
+
+.section-title span {
+    font-family: 'first-order-title', sans-serif;
+    color: rgb(255, 191, 63);
+}
+
+.texto-corrido {
+    color: #fff;
+}
+
+.texto-corrido-secundario {
+    color: rgb(200, 130, 00);
+}
+
+.texto-corrido-primario {
+    color: rgb(255, 191, 63);
+}
+
+.texto-corrido-faded {
+color: rgba(255, 191, 63, 0.3);
+}
+
+.publicos {
+    overflow: hidden;
+    max-height: 416px;
+}
+
+#botao-mensagem {
+    background-color: rgb(255, 191, 63);
+    color: rgb(33, 35, 34);
+}
+
+#botao-mensagem:hover {
+    background-color: rgb(200, 130, 00);
+}
+
+.form-control {
+    background-color: rgb(33, 35, 34);
+    border: 1px solid rgb(255, 191, 63);
+    color: #fff;
+    font-size: 20px;
+}
+
+#nome:focus, #e-mail:focus, #telefone:focus, #mensagem:focus {
+    background-color: rgb(33, 35, 34);
+    outline: rgb(255, 191, 63) !important;
+    border: rgb(200, 130, 00) !important;
+    box-shadow: 0 0 5px 3px rgba(255, 191, 63, 0.3) !important;
+    color: #fff;
+}
+
+.img-placeholder-cardapio {
+    min-height: 175px;
+    max-height: 175px;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+.redes {
+    text-decoration: none;
+}
+.redes > .texto-corrido-secundario:hover {
+    color: rgb(255, 191, 63);
+}
+
+@media (max-width:767px) {
+    .carousel {
+        min-height: 280px;
+        max-height: 280px;
+    }
+
+    .carousel-item img {
+        height: 280px;
+    }
+}

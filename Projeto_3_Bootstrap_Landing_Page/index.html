@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Lib/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="icon" href="./Assets/MARCA TAVERNA BÚFALO DOURADO/marca/png/Icone-Taverna-Búfalo-Dourado(amarelo).png">
+    <title>Bufalo Dourado</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-1" id="cabecalho">
+        <div class="container">
+            <div class="sub-cont">
+                <img src="./Assets/MARCA TAVERNA BÚFALO DOURADO/marca/png/Icone-Taverna-Búfalo-Dourado(amarelo).png" alt="tbd-logo" id="tbd-logo">
+                <h1 class="navbar-brand Titulo fs-2">Taverna <br>Búfalo Dourado</br></h1>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door"></i>
+                            Sobre a taverna
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text"></i>
+                            Nosso cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="Assets/Placeholders/ai-generated-8591048_1280.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="Assets/Placeholders/beer-3687803_1280.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="Assets/Placeholders/men-5691491_1280.jpg" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="Assets/Placeholders/vintage-1634038_960_720.jpg" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./Assets/MARCA TAVERNA BÚFALO DOURADO/marca/png/Taverna-Búfalo-Dourado.png" class="d-block w-100 rounded" alt="" id="sobre-img">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title fs-1"> Sobre a <span>Taverna</span></h2>
+                            <p class="texto-corrido fs-4">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsam vero, tenetur est ad tempore magnam velit iure, facilis itaque alias necessitatibus culpa voluptatum ipsum? Tenetur distinctio ipsa reiciendis optio.
+                            </p>
+                            <h3 class="section-title fs-2"> Sobre o <span>Espaço</span></h3>
+                            <p class="texto-corrido fs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ex omnis quibusdam, ea aliquid enim beatae nam libero fugiat nihil soluta quae dolor tempore laudantium a repellendus, magni possimus itaque.
+                            </p>
+                            <ul>
+                                <li class="texto-corrido fs-4">
+                                    item 1
+                                </li>
+                                <li class="texto-corrido fs-4">
+                                    item 2
+                                </li>
+                                <li class="texto-corrido fs-4">
+                                    item 3
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-3">Para todas as <span>ocasiões!</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./Assets/Todos os publicos/eventos geek.jpg" alt="" class="d-block w-100 mb-3 rounded publicos">
+                        <h3 class="section-title fs-5">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Eventos <span>Geeks</span>
+                        </h3>
+                        <p class="texto-corrido">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita non cumque similique alias soluta culpa. Possimus maiores beatae eaque sequi amet ducimus ipsam deserunt corporis labore rem, dignissimos dolorem.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Assets/Todos os publicos/corujoes2.png" alt="" class="d-block w-100 mb-3 rounded publicos">
+                        <h3 class="section-title fs-5">
+                            <i class="bi bi-sunset-fill"></i>
+                            fazemos <span>Corujôes</span>
+                        </h3>
+                        <p class="texto-corrido">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita non cumque similique alias soluta culpa. Possimus maiores beatae eaque sequi amet ducimus ipsam deserunt corporis labore rem, dignissimos dolorem.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Assets/Todos os publicos/teste.jpg" alt="" class="d-block w-100 mb-3 rounded publicos">
+                        <h3 class="section-title fs-5">
+                            <i class="bi bi-people-fill"></i>
+                            eventos <span>formais</span>
+                        </h3>
+                        <p class="texto-corrido">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita non cumque similique alias soluta culpa. Possimus maiores beatae eaque sequi amet ducimus ipsam deserunt corporis labore rem, dignissimos dolorem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-3">Nosso <span>cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2 texto-corrido mb-4">
+                        <nav class="nav nav-pills flex-column">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas" class="nav-link text-start active fw-bold">Bebidas não alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="nav-link text-start fw-bold">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lanches" class="nav-link text-start fw-bold">Lanches</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#petiscos" class="nav-link text-start fw-bold">Petiscos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="nav-link text-start fw-bold">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="nav-link text-start fw-bold">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="nav-link text-start fw-bold">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10 texto-corrido">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="bebidas-nao-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/beverage-cans-86982_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/drink-462776_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/bottle-1838772_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 3
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/coffee-563800_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 4
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/drinks-2592848_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 5
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/lemon-2350368_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 6
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/blueberries-4211525_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 7
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/drink-8294394_1280.webp" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 8
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/beer-422138_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 9
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/cocktails-1869868_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 10
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/liquor-5884_640.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 11
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/cocktail-5388582_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 12
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/cocktail-drinks-6950673_640.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            bebida 13
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="lanches">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/club-sandwich-3538455_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            lanche 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/club-sandwich-3538455_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Lanche 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/club-sandwich-3538455_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Lanche 3
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/club-sandwich-3538455_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Lanche 4
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="petiscos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/food-3119425_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Petisco 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/food-3119425_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Petisco 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/food-3119425_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Petisco 3
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/gourmet-5619887_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            entrada 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/gourmet-5619887_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Entrada 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/gourmet-5619887_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            entrada 3
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/gourmet-5619887_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Entrada 4
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/osso-buco-2535546_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Prato principal 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/osso-buco-2535546_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Prato principal 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/osso-buco-2535546_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Prato principal 3
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/chocolate-cake-4446608_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Sobremesa 1
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="Assets/Placeholders/chocolate-cake-4446608_1280.jpg" alt="" class="d-block w-100 pb-2 img-placeholder-cardapio">
+                                        <h5 class="fw-bold section-title">
+                                            Sobremesa 2
+                                        </h5>
+                                        <p class="texto-corrido">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quasi omnis est magni quos, vel ea amet libero nam quae atque placeat at non sint exercitationem praesentium perferendis dolorum iusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span>conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label texto-corrido-secundario fs-4">seu <span class="texto-corrido-primario">nome:</span></label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="e-mail" class="form-label texto-corrido-secundario fs-4">seu <span class="texto-corrido-primario">e-mail:</span></label>
+                                <input type="email" id="e-mail" class="form-control" required>
+                            </div>
+                            <div>
+                                <label for="telefone" class="form-label texto-corrido-secundario fs-4">seu <span class="texto-corrido-primario">telefone:</span><span class="texto-corrido-faded">(opcional)</span></label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label texto-corrido-secundario fs-4">sua <span class="texto-corrido-primario">mensagem:</span></label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fs-4 mt-3" id="botao-mensagem">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row mt-3">
+                            <h3 class="section-title fs-3">
+                                Nosso <span>Endereço:</span>
+                            </h3>
+                            <p class="texto-corrido fs-5">
+                                <i class="bi bi-cursor-fill texto-corrido-secundario"></i>
+                                Rua Capitão Melo, Nº: 528, Stella Maris, Salvador - Bahia
+                            </p>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4">
+                                Redes <span>Sociais:</span>
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#" class="redes">
+                                        <i class="bi bi-facebook texto-corrido-secundario"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#" class="redes">
+                                        <i class="bi bi-instagram texto-corrido-secundario"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#" class="redes">
+                                        <i class="bi bi-twitter-x texto-corrido-secundario"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#" class="redes">
+                                        <i class="bi bi-discord texto-corrido-secundario"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#" class="redes">
+                                        <i class="bi bi-whatsapp texto-corrido-secundario"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./Lib/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./Lib/Jquery/jquery-3.7.1.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

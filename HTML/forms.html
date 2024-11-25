@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <nav>
+            <a href="./Index.html">Home</a>
+            <a href="./Containers.html">Containers</a>
+            <a href="./listas.html">Listas</a>
+            <a href="./Tabelas.html">Tabelas</a>
+            <a href="./forms.html">Formularios</a>
+            <a href="./midia.html">Midias</a>
+            <a href="./Exercicio.html">Exercicio</a>
+        </nav>
+    </header>
+    <form>
+        <input type="text" placeholder="Seu nome"/>
+        <br />
+        <label for="email"> seu email</label>
+        <input id="email" type="Email" />
+        <br />
+        <input type="tel" placeholder="seu Telefone" />
+        <br />
+        <input type="number" max="10" min="2" step="2"/>
+        <br />
+        <input type="file"/>
+        <br />
+        <input type="color" />
+        <br />
+        <input id="termos" type="checkbox" /> 
+        <label for="termos">Aceito os termos</label>
+        <br />
+        <p>
+            Qual sua cor favorita?
+        </p>
+        <input id="vermelho" type="radio" name="cor-favorita" /> <label for="vermelho">Vermelho</label>
+        <input id="verde" type="radio" name="cor-favorita" /> <label for="verde">Verde</label>
+        <input id="azul" type="radio" name="cor-favorita" /> <label for="azul">Azul</label>
+        <br />
+        <label>Qual seu filme favorito?</label>
+        <select multiple>
+            <option>Filme A</option>
+            <option>Filme B</option>
+            <option>Filme C</option>
+            <option>Filme D</option>
+            <option>Filme E</option>
+        </select>
+        <br />
+        <label>Qual sua musica favorita?</label>
+        <select>
+            <option>Musica A</option>
+            <option>Musica B</option>
+            <option>Musica C</option>
+            <option>Musica D</option>
+            <option>Musica E</option>
+        </select>
+        <br />
+        <textarea></textarea>
+        <br />
+        <button type="submit">
+            enviar
+        </button>
+        <button type="reset">
+            limpar
+        </button>
+    </form>
+</body>
+</html>
